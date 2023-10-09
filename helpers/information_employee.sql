@@ -1,0 +1,1 @@
+SELECT * FROM information_employee.employee_registration;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee list</title>
+</head>
+<body>
+    <h1>Employee list</h1>
+
+    <table border="1" width="100%">
+
+        <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Actions</th><!-- <th>Actions</th/>  -->
+        <tr>
+
+        <% if (data.length > 0){ %>
+
+            <% for(var i = 0;i < data.length;i++){ %>
+
+                <tr>
+                    <td><%- data[i].username%></td>
+            
+                    <td><%- data[i].email%></td>
+
+                    <td><a href="/delete-data?username=<%- data[i].username%>" >Delete</a></td> <!---->
+                </tr>
+
+            <% } %>
+
+        <% }else{ %>
+
+            <h1> dat not found</h1>
+
+        <% } %>
+       
+        </tr>
+    </table>
+</body>
+</html>

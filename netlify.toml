@@ -1,0 +1,6 @@
+[build]
+  functions = "lambda" # Assuming your serverless function is in a folder named "lambda"
+  publish = "public"   # Specify the directory where your static files are located
+
+[build.environment]
+  # You can add environment variables if needed

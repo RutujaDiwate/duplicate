@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+               "": "/admin"
+            },
+            "previewLimit": 50,
+            "server": "130.190.54.22",
+            "port": 1633,
+            "driver": "MySQL",
+            "name": "ecohrms",
+            "database": "hrms_app",
+            "username": "ecohrms",
+            "password": "EcoHrms@123"
+        }
+    ]
+}
